@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+    
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="1.jpg" alt="Dota2" title="Dota2">
+            </div>
+            <div class="swiper-slide">
+                <img src="2.jpg" alt="HS" title="HS">
+            </div>
+            <div class="swiper-slide">
+                <img src="3.jpg" alt="Valorant" title="Valorant">
+            </div>
+    
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+        <!-- scrollbar -->
+        <div class="swiper-scrollbar"></div>
+        </div>    
+    
+        
+    
+    
+    
+    <div style="padding-top:50px">
+    
+        <label for="type-deposits" style="font-size:25pt;">Выберите тип вклада:</label>
+    <select name="deposits" id="type-deposits" onchange="Update_Combobox_2()" style="font-size:25pt;">
+        <option value="0" disabled selected>-Тип вклада-</option>
+        <option value="1">Пополняемый</option>
+        <option value="2">Срочный</option>
+    </select>
+    
+    </div>
+    
+    
+    <div br style="padding-top:25px">
+    
+       <label for="date" style="font-size:25pt;">Выберите срок вклада:</label>
+    <select name="Date" id="date" style="font-size:25pt;">
+        <option value="0" disabled selected>-Срок вклада-</option>
+    
+    </select> 
+    
+    </div>
+    <p><input type="text" name="InAss" placeholder="Введите сумму" size="18" style="font-size:25pt;"/></p>
+    
+    <button class="favorite styled" type="button" id = "submit" onclick="Sum();">Расcчитать! </button> 
+    
+    
+    <div class="sum" style="font-size:25pt; padding-top:25px;"></div>
+
+
+    <center>
+        <img class="pic_center" src="hh.jpg" height="142" width="256"/>
+          <div class="input">
+          <input id="in"></input>
+          </div>
+          <div class="input">
+            <button class="button" type="submit" id="submit" onclick="vac();"> Поиск </button>
+          </div>
+          <p id="task"></p>
+    </center>
+
+
+
+    <script type="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
